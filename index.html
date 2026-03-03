@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kokil Jaidka</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #222;
+      background: #fff;
+      padding: 2em;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    a { color: #1a6a9a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .header {
+      display: flex;
+      gap: 2em;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      padding-bottom: 1.5em;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .header-text h1 { font-size: 1.8em; font-weight: 700; margin-bottom: 0.1em; }
+    .header-text .position { font-size: 1em; color: #444; margin-bottom: 0.1em; }
+    .header-text .org a { color: #444; }
+    .header-links {
+      margin-top: 0.6em;
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+    .header-links a { font-size: 0.9em; color: #1a6a9a; }
+
+    /* Nav */
+    nav {
+      margin-bottom: 2em;
+      display: flex;
+      gap: 1.5em;
+      font-size: 0.95em;
+      flex-wrap: wrap;
+    }
+    nav a { color: #333; font-weight: 500; }
+    nav a:hover { color: #1a6a9a; text-decoration: none; }
+
+    /* Sections */
+    section { margin-bottom: 2.5em; }
+    h2 {
+      font-size: 1.2em;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 0.8em;
+      padding-bottom: 0.3em;
+      border-bottom: 2px solid #1a6a9a;
+    }
+
+    /* Bio */
+    .bio p { margin-bottom: 0.8em; }
+    .bio ul { padding-left: 1.4em; margin-top: 0.4em; }
+    .bio ul li { margin-bottom: 0.2em; }
+
+    /* Publications */
+    .pub-list { list-style: none; }
+    .pub-list li { margin-bottom: 1.2em; }
+    .pub-title { font-weight: 600; color: #111; }
+    .pub-authors { font-size: 0.9em; color: #555; margin: 0.1em 0; }
+    .pub-venue { font-size: 0.9em; color: #333; font-style: italic; }
+    .pub-badge {
+      display: inline-block;
+      font-size: 0.75em;
+      padding: 0.1em 0.45em;
+      border-radius: 3px;
+      background: #e8f4ea;
+      color: #2a6e2a;
+      font-weight: 600;
+      margin-left: 0.4em;
+      vertical-align: middle;
+    }
+    .pub-year-group { margin-bottom: 1.8em; }
+    .pub-year-group h3 { font-size: 1em; color: #666; font-weight: 600; margin-bottom: 0.8em; }
+
+    /* Talks / lists */
+    .item-list { list-style: none; }
+    .item-list li { margin-bottom: 0.9em; padding-left: 1em; position: relative; }
+    .item-list li::before { content: "▸"; position: absolute; left: 0; color: #1a6a9a; }
+    .item-title { font-weight: 600; }
+    .item-detail { font-size: 0.9em; color: #555; }
+
+    /* Footer */
+    footer {
+      margin-top: 3em;
+      padding-top: 1em;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.85em;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 1em; }
+      .header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-text">
+      <h1>Kokil Jaidka</h1>
+      <div class="position">Associate Professor of Computational Communication</div>
+      <div class="org">
+        <a href="https://www.comp.nus.edu.sg/~jaidka/" target="_blank">
+          Department of Communications and New Media<br>
+          National University of Singapore
+        </a>
+      </div>
+      <div class="header-links">
+        <a href="mailto:jaidka@nus.edu.sg">✉ jaidka@nus.edu.sg</a>
+        <a href="https://goo.gl/hCcMdW" target="_blank">Google Scholar</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a href="#awards">Grants &amp; Awards</a>
+    <a href="#service">Service</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about" class="bio">
+    <h2>About</h2>
+    <p>
+      I am an Associate Professor of Computational Communication at the National University of Singapore,
+      with an affiliate position at the NUS Institute of Data Sciences. My research develops computational
+      models of language to measure and understand computer-mediated communication — particularly how
+      social media shapes political behaviour, wellbeing, and public discourse.
+    </p>
+    <p>
+      Previously, I was a Presidential Postdoctoral Fellow at NTU (2018–2019) and a postdoctoral researcher
+      at the University of Pennsylvania working with Prof. Lyle Ungar on the
+      <a href="https://wwbp.org/" target="_blank">World Wellbeing Project</a> (2016–2018).
+      Before academia, I spent three years as a Senior Computer Scientist at Adobe Research,
+      where I co-invented nine patents in digital marketing and natural language processing.
+    </p>
+    <p>
+      I am the Programme Coordinator for the Master's in Data Communication at NUS, and Principal
+      Investigator on grants totalling over S$25 million, including a Ministry of Education Tier 3
+      grant on Digital Information Resilience.
+    </p>
+    <p style="font-size:0.9em; color:#555;">
+      <em>The postings on this site are my own and do not represent the position or opinions of the
+      Department of Communications and New Media, NUS.</em>
+    </p>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Research</h2>
+    <p style="margin-bottom:0.6em;">My students and I work on three broad themes:</p>
+    <ul class="bio" style="padding-left:1.4em;">
+      <li style="margin-bottom:0.4em;"><strong>Computational models of language</strong> — measuring affect, discussion quality, and wellbeing in online communication using NLP and machine learning.</li>
+      <li style="margin-bottom:0.4em;"><strong>Platform auditing</strong> — studying how social media design and algorithmic features (e.g. shadowbans, affordances, hiding likes) shape discourse and equity.</li>
+      <li style="margin-bottom:0.4em;"><strong>Field experiments</strong> — running experiments with custom-built social media apps to improve the health of online communication.</li>
+    </ul>
+    <p style="margin-top:0.8em;">
+      I publish mainly in top CS venues (ACL, EMNLP, ICWSM, AAAI) and leading social science journals
+      (<em>Nature Human Behaviour</em>, <em>PNAS</em>, <em>Journal of Communication</em>,
+      <em>Political Communication</em>, <em>Computers in Human Behavior</em>).
+      3,200+ citations, h-index 27.
+    </p>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <h2>Selected Publications</h2>
+
+    <div class="pub-year-group">
+      <h3>Forthcoming</h3>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title">Decriminalizing Same-sex Relationships and its Impact on Online Discourse in Asia</div>
+          <div class="pub-authors">Jaidka K., Verma P., &amp; Chen Y.</div>
+          <div class="pub-venue">Nature Human Behaviour <span class="pub-badge">IF 29.9</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year-group">
+      <h3>2025</h3>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title"><a href="https://journals.sagepub.com/doi/10.1177/0261927X251364003" target="_blank">Communities of Protest: A 3R Framework of Social Media Rhetoric, Reach, and Reinforcement in India's Anti-NRC Movement</a></div>
+          <div class="pub-authors">Jaidka K.</div>
+          <div class="pub-venue">Journal of Language and Social Psychology</div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3706598.3713371" target="_blank">Beyond Context to Cognitive Appraisal: Emotion Reasoning as a Theory of Mind Benchmark for Large Language Models</a></div>
+          <div class="pub-authors">Yeo G. C. &amp; Jaidka K.</div>
+          <div class="pub-venue">ACL 2025 Findings <span class="pub-badge">CORE A*</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year-group">
+      <h3>2024</h3>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title"><a href="https://aclanthology.org/2024.findings-emnlp.449/" target="_blank">"Thinking" Fair and Slow: On the Efficacy of Structured Prompts for Debiasing Language Models</a></div>
+          <div class="pub-authors">Furniturewala S., Jandial S., Java A., Banerjee P., Shahid S., Bhatia S., &amp; Jaidka K.</div>
+          <div class="pub-venue">EMNLP 2024 <span class="pub-badge">CORE A*</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://aclanthology.org/2024.findings-acl.486/" target="_blank">Beyond Text: Leveraging Multi-Task Learning and Cognitive Appraisal Theory for Post-Purchase Intention Analysis</a></div>
+          <div class="pub-authors">Yeo G., Furniturewala S., &amp; Jaidka K.</div>
+          <div class="pub-venue">ACL 2024 Findings <span class="pub-badge">CORE A*</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://doi.org/10.1080/02650487.2024.2380438" target="_blank">User-Centric Behavioral Tracking: Lessons from Three Case Studies with Do-It-Yourself Computational Pipelines</a></div>
+          <div class="pub-authors">Zhou A., Metaxa D., Kim Y. M., &amp; Jaidka K.</div>
+          <div class="pub-venue">Journal of Advertising</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year-group">
+      <h3>2023</h3>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title"><a href="https://academic.oup.com/joc/article/73/2/163/7034028" target="_blank">Silenced on social media: the gatekeeping functions of shadowbans in the American Twitterverse</a></div>
+          <div class="pub-authors">Jaidka K., Mukerjee S., &amp; Lelkes Y.</div>
+          <div class="pub-venue">Journal of Communication, 73(2), 163–178 <span class="pub-badge">IF 5.75</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://aclanthology.org/2023.findings-emnlp.189/" target="_blank">The PEACE-Reviews Dataset: Modeling Cognitive Appraisals in Emotion Text Analysis</a></div>
+          <div class="pub-authors">Yeo G. C. &amp; Jaidka K.</div>
+          <div class="pub-venue">EMNLP 2023 Findings <span class="pub-badge">CORE A*</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://aclanthology.org/2023.findings-acl.72/" target="_blank">I am PsyAM: Modeling Happiness with Cognitive Appraisal Dimensions</a></div>
+          <div class="pub-authors">Liu X. &amp; Jaidka K.</div>
+          <div class="pub-venue">ACL 2023 Findings <span class="pub-badge">CORE A*</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year-group">
+      <h3>2022</h3>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title"><a href="https://www.nature.com/articles/s41562-022-01390-w" target="_blank">Reply to: Local news in Google News</a></div>
+          <div class="pub-authors">Fischer S., Jaidka K., &amp; Lelkes Y.</div>
+          <div class="pub-venue">Nature Human Behaviour, 6(8), 1045–1047 <span class="pub-badge">IF 29.9</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://academic.oup.com/jcmc/article/27/1/zmab019/6432698" target="_blank">Beyond anonymity: Network affordances, under deindividuation, improve social media discussion quality</a></div>
+          <div class="pub-authors">Jaidka K., Zhou A., Lelkes Y., Egelhofer J., &amp; Lecheler S.</div>
+          <div class="pub-venue">Journal of Computer-Mediated Communication, 27(1) <span class="pub-badge">IF 7.2</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://www.tandfonline.com/doi/full/10.1080/10584609.2021.2021165" target="_blank">The Political Landscape of the US Twitterverse</a></div>
+          <div class="pub-authors">Mukerjee S., Jaidka K., &amp; Lelkes Y.</div>
+          <div class="pub-venue">Political Communication <span class="pub-badge">IF 7.5</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://www.nature.com/articles/s41598-022-09059-4" target="_blank">Cross-platform and subgroup differences in the well-being effects of Twitter, Instagram, and Facebook</a></div>
+          <div class="pub-authors">Jaidka K.</div>
+          <div class="pub-venue">Scientific Reports, 12(1) <span class="pub-badge">IF 4.6</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://academic.oup.com/joc/article/71/5/715/6358644" target="_blank">Questionable and open research practices: attitudes and perceptions among quantitative communication researchers</a></div>
+          <div class="pub-authors">Bakker B. N., Jaidka K., Dörr T., Fasching N., &amp; Lelkes Y.</div>
+          <div class="pub-venue">Journal of Communication, 71(5), 715–738 <span class="pub-badge">IF 5.75</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year-group">
+      <h3>2020</h3>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title"><a href="https://www.nature.com/articles/s41562-020-00954-0" target="_blank">Auditing local news presence on Google News</a></div>
+          <div class="pub-authors">Fischer S., Jaidka K., &amp; Lelkes Y.</div>
+          <div class="pub-venue">Nature Human Behaviour, 4(12), 1236–1244 <span class="pub-badge">IF 29.9</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://www.pnas.org/doi/10.1073/pnas.1906364117" target="_blank">Estimating geographic subjective well-being from Twitter: A comparison of dictionary and data-driven language methods</a></div>
+          <div class="pub-authors">Jaidka K., Giorgi S., Schwartz H. A., Kern M. L., Ungar L. H., &amp; Eichstaedt J. C.</div>
+          <div class="pub-venue">Proceedings of the National Academy of Sciences, 117(19), 10165–10171 <span class="pub-badge">IF 11.1</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://www.sciencedirect.com/science/article/pii/S0736585320300393" target="_blank">Information-seeking vs. sharing: Which explains regional health? An analysis of Google Search and Twitter trends</a></div>
+          <div class="pub-authors">Jaidka K., Eichstaedt J., Giorgi S., Schwartz H. A., &amp; Ungar L. H.</div>
+          <div class="pub-venue">Telematics and Informatics, 59, 101540 <span class="pub-badge">IF 9.14</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://www.sciencedirect.com/science/article/pii/S0747563220302879" target="_blank">The rural–urban stress divide: Obtaining geographical insights through Twitter</a></div>
+          <div class="pub-authors">Jaidka K., Guntuku S. C., Lee J. H., Luo Z., Buffone A., &amp; Ungar L. H.</div>
+          <div class="pub-venue">Computers in Human Behavior, 114, 106544 <span class="pub-badge">IF 8.9</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year-group">
+      <h3>2019</h3>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title"><a href="https://academic.oup.com/joc/article/69/4/345/5541452" target="_blank">Brevity is the soul of Twitter: The constraint affordance and political discussion</a></div>
+          <div class="pub-authors">Jaidka K., Zhou A., &amp; Lelkes Y.</div>
+          <div class="pub-venue">Journal of Communication, 69(4), 345–372 <span class="pub-badge">IF 5.75</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year-group">
+      <h3>2018 (Conference)</h3>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title"><a href="https://aclanthology.org/P18-1030/" target="_blank">Diachronic degradation of language models: Insights from social media</a></div>
+          <div class="pub-authors">Jaidka K., Chhaya N., &amp; Ungar L.</div>
+          <div class="pub-venue">ACL 2018 <span class="pub-badge">CORE A*</span></div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://aclanthology.org/D18-1447/" target="_blank">Identifying Locus of Control in Social Media Language</a></div>
+          <div class="pub-authors">Rouhizadeh M., Jaidka K., Smith L., Buffone A., Schwartz H. A., &amp; Ungar L.</div>
+          <div class="pub-venue">EMNLP 2018 <span class="pub-badge">CORE A*</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <p style="font-size:0.9em; color:#666; margin-top:0.5em;">
+      Full list on <a href="https://goo.gl/hCcMdW" target="_blank">Google Scholar</a>.
+      9 US patents granted.
+    </p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience &amp; Education</h2>
+
+    <p style="font-weight:600; margin-bottom:0.5em;">Academic Positions</p>
+    <ul class="item-list" style="margin-bottom:1.2em;">
+      <li>
+        <div class="item-title">Associate Professor of Computational Communication</div>
+        <div class="item-detail">National University of Singapore · 2021–present · Programme Coordinator, Master's in Data Communication</div>
+      </li>
+      <li>
+        <div class="item-title">Presidential Postdoctoral Fellow</div>
+        <div class="item-detail">Nanyang Technological University · 2018–2019</div>
+      </li>
+      <li>
+        <div class="item-title">Postdoctoral Researcher, World Wellbeing Project</div>
+        <div class="item-detail">University of Pennsylvania (with Prof. Lyle Ungar) · 2016–2018</div>
+      </li>
+    </ul>
+
+    <p style="font-weight:600; margin-bottom:0.5em;">Industry</p>
+    <ul class="item-list" style="margin-bottom:1.2em;">
+      <li>
+        <div class="item-title">Senior Computer Scientist, Big Data Intelligence Lab</div>
+        <div class="item-detail">Adobe Inc., India · Nov 2013–Sep 2016 · Digital marketing, NLP, 9 patents</div>
+      </li>
+    </ul>
+
+    <p style="font-weight:600; margin-bottom:0.5em;">Education</p>
+    <ul class="item-list">
+      <li>
+        <div class="item-title">Ph.D. in Information Studies</div>
+        <div class="item-detail">Nanyang Technological University, Singapore · 2014</div>
+      </li>
+      <li>
+        <div class="item-title">B.Engg. in Information Technology (First Class Hons)</div>
+        <div class="item-detail">Punjab Engineering College, India · 2008</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- GRANTS & AWARDS -->
+  <section id="awards">
+    <h2>Grants &amp; Awards</h2>
+
+    <p style="font-weight:600; margin-bottom:0.5em;">Research Grants (as PI)</p>
+    <ul class="item-list" style="margin-bottom:1.2em;">
+      <li>
+        <div class="item-title">MOE Tier 3 — Digital Information Resilience · ~S$23,000,000 · 2023–present</div>
+        <div class="item-detail">Project PI</div>
+      </li>
+      <li>
+        <div class="item-title">CATOS — Online Hate Speech Detection · S$800,000 · 2025</div>
+        <div class="item-detail">A taxonomic approach to multilingual and cross-cultural hate speech</div>
+      </li>
+      <li>
+        <div class="item-title">NUS CTIC Research Project · S$105,000 · 2021</div>
+      </li>
+      <li>
+        <div class="item-title">Facebook Integrity Foundation Award · USD $100,000 · 2019 (co-PI)</div>
+        <div class="item-detail">Effects of social network affordances on political discourse (with Dr. Yphtach Lelkes, PI)</div>
+      </li>
+      <li>
+        <div class="item-title">Nanyang Presidential Postdoctoral Fellowship · S$200,000 · 2018</div>
+      </li>
+      <li>
+        <div class="item-title">NUS Start-Up Grant · S$75,000 · 2020</div>
+      </li>
+    </ul>
+
+    <p style="font-weight:600; margin-bottom:0.5em;">Honours</p>
+    <ul class="item-list">
+      <li>AAAI 2021 New Faculty Highlights — one of 18 invited speakers worldwide</li>
+      <li>Multiple Best Senior PC awards at EMNLP, ICWSM (2021–present)</li>
+      <li>Best Poster — New York Academy of Sciences Speech and Dialogue Symposium (2019)</li>
+    </ul>
+  </section>
+
+  <!-- SERVICE -->
+  <section id="service">
+    <h2>Service</h2>
+    <ul class="item-list">
+      <li>Associate Editor — <em>EPJ Data Science</em>, <em>Journal of Language and Social Psychology</em>, <em>Journal of Quantitative Description: Digital Media</em>, <em>Computational Communication Research</em></li>
+      <li>Editorial Board — <em>Journal of Communication</em> (2022–present)</li>
+      <li>Co-Chair, Publication Ethics Committee — Association for Computational Linguistics (2024–2029)</li>
+      <li>Steering Committee — AAAI ICWSM (2024–2029)</li>
+      <li>Program Committee co-chair — IC2S2 2023 &amp; 2024, ICWSM 2024, SocInfo 2022</li>
+      <li>General Chair — Singapore Symposium on Natural Language Processing, Dec 2023</li>
+      <li>Financial Support co-chair — FAccT 2025</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Kokil Jaidka · National University of Singapore · Last updated March 2026</p>
+  </footer>
+
+</body>
+</html>
